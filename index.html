@@ -19,8 +19,7 @@
 
 <ul class="nav-links">
 <li onclick="scrollToSection('home')">Home</li>
-<li onclick="scrollToSection('crossline')">Crossline</li>
-<li onclick="scrollToSection('systems')">Systems</li>
+<li onclick="scrollToSection('projects')">Projects</li>
 <li onclick="scrollToSection('contact')">Contact</li>
 </ul>
 
@@ -28,50 +27,114 @@
 
 
 
+<!-- HERO -->
+
 <section id="home" class="hero fade">
 
 <h1>Roblox Developer</h1>
 
 <p class="tagline">
-Creating advanced gameplay systems and scalable game architecture.
+Building advanced gameplay systems and scalable architecture.
 </p>
 
-<button onclick="scrollToSection('crossline')">View Project</button>
+<button onclick="scrollToSection('projects')">View Projects</button>
 
 </section>
 
 
 
-<section id="crossline" class="fade">
+<!-- PROJECT TABS -->
 
-<h2>Crossline</h2>
+<section id="projects" class="fade">
 
-<p class="subtitle">
-Tactical multiplayer shooter focused on strategy,
-agents, and mission-driven gameplay.
-</p>
+<h2>Projects</h2>
 
-<div class="project-grid">
+<div class="tabs">
 
-<div class="project-card">
-<h3>Combat Systems</h3>
-<p>
-Custom weapon mechanics and gameplay framework designed for competitive matches.
-</p>
+<button class="tab active" onclick="openTab('current')">
+Current Project
+</button>
+
+<button class="tab" onclick="openTab('previous')">
+Previous Works
+</button>
+
 </div>
 
-<div class="project-card">
-<h3>Agent Abilities</h3>
+
+
+<!-- CURRENT PROJECT -->
+
+<div id="current" class="tab-content active">
+
+<div class="project">
+
+<img src="media/crossline1.png">
+
+<div class="project-info">
+
+<h3>Crossline</h3>
+
 <p>
-Unique characters with tactical abilities and role-based gameplay.
+Tactical multiplayer shooter featuring agents,
+mission systems, and competitive gameplay.
 </p>
+
+<ul>
+<li>Custom weapon framework</li>
+<li>Agent ability systems</li>
+<li>Mission progression</li>
+<li>Custom UI framework</li>
+</ul>
+
 </div>
 
+</div>
+
+
+
+<!-- OPTIONAL VIDEO -->
+
+<div class="video">
+
+<iframe width="100%" height="400"
+src="https://www.youtube.com/embed/VIDEO_ID">
+</iframe>
+
+</div>
+
+</div>
+
+
+
+<!-- PREVIOUS PROJECTS -->
+
+<div id="previous" class="tab-content">
+
 <div class="project-card">
-<h3>Mission Framework</h3>
+
+<img src="media/project_placeholder.png">
+
+<h3>Project Name</h3>
+
 <p>
-Dynamic objectives and progression systems.
+Short description of the system or project.
 </p>
+
+</div>
+
+
+
+<div class="project-card">
+
+<img src="media/project_placeholder.png">
+
+<h3>Another Project</h3>
+
+<p>
+Example placeholder you can replace anytime.
+</p>
+
 </div>
 
 </div>
@@ -80,44 +143,14 @@ Dynamic objectives and progression systems.
 
 
 
-<section id="systems" class="fade">
-
-<h2>Systems Developed</h2>
-
-<div class="systems-grid">
-
-<div class="system">
-<h3>Weapon System</h3>
-<p>Advanced weapon mechanics and networking.</p>
-</div>
-
-<div class="system">
-<h3>UI Framework</h3>
-<p>Custom scalable UI architecture.</p>
-</div>
-
-<div class="system">
-<h3>Networking</h3>
-<p>Client-server communication and replication.</p>
-</div>
-
-<div class="system">
-<h3>Gameplay Systems</h3>
-<p>Mission logic, interactions, and core mechanics.</p>
-</div>
-
-</div>
-
-</section>
-
-
+<!-- CONTACT -->
 
 <section id="contact" class="fade">
 
 <h2>Contact</h2>
 
 <p>
-Portfolio and development updates available upon request.
+Development portfolio for Roblox systems and gameplay architecture.
 </p>
 
 </section>
@@ -130,8 +163,9 @@ Portfolio and development updates available upon request.
 
 </footer>
 
+
+
 <script src="script.js"></script>
 
 </body>
-
 </html>
