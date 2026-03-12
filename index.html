@@ -2,95 +2,148 @@
 <html>
 
 <head>
+
 <title>Mike | Roblox Developer</title>
+
 <link rel="stylesheet" href="style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
 
-<header>
-<h1>Mike</h1>
-<p>Roblox Game Developer</p>
-</header>
+<nav>
 
-<section id="about">
-<h2>About</h2>
+<div class="logo">Mike</div>
+
+<ul class="nav-links">
+
+<li onclick="scrollToSection('home')">Home</li>
+<li onclick="scrollToSection('crossline')">Crossline</li>
+<li onclick="scrollToSection('systems')">Systems</li>
+<li onclick="scrollToSection('media')">Media</li>
+<li onclick="scrollToSection('contact')">Contact</li>
+
+</ul>
+
+</nav>
+
+
+
+<section id="home" class="hero">
+
+<h1>Roblox Game Developer</h1>
 
 <p>
-Roblox developer focused on building advanced gameplay
-systems, UI frameworks, and scalable game architecture.
-
-Primary Project:
-<strong>Crossline</strong>
+Building advanced gameplay systems and scalable architecture.
 </p>
+
+<button onclick="scrollToSection('crossline')">View Project</button>
 
 </section>
 
 
-<section id="project">
 
-<h2>Featured Project</h2>
+<section id="crossline">
 
-<div class="card">
+<h2>Crossline</h2>
 
-<h3>Crossline</h3>
-
-<p>
-Crossline is a tactical multiplayer shooter focused on
-team strategy, agents, and mission based gameplay.
+<p class="subtitle">
+Tactical multiplayer shooter focused on agent abilities,
+team strategy, and mission driven gameplay.
 </p>
 
-<ul>
-<li>Custom weapon framework</li>
-<li>Agent ability systems</li>
-<li>Mission progression</li>
-<li>Custom UI framework</li>
-<li>Competitive team gameplay</li>
-</ul>
+<div class="project-grid">
+
+<div class="project-card">
+
+<img src="images/crossline1.png">
+
+<h3>Gameplay</h3>
+
+<p>
+Strategic combat and competitive multiplayer systems.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<img src="images/crossline2.png">
+
+<h3>UI Framework</h3>
+
+<p>
+Custom scalable interface designed for performance.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<img src="images/crossline3.png">
+
+<h3>Agents</h3>
+
+<p>
+Unique characters with tactical abilities.
+</p>
+
+</div>
 
 </div>
 
 </section>
+
 
 
 <section id="systems">
 
 <h2>Systems Developed</h2>
 
-<div class="grid">
+<div class="systems-grid">
 
-<div class="box">
-<h3>Combat Systems</h3>
-<p>Custom weapon handling and gameplay mechanics.</p>
+<div class="system">
+<h3>Weapon Systems</h3>
+<p>Custom combat handling and weapon mechanics.</p>
 </div>
 
-<div class="box">
-<h3>UI Framework</h3>
-<p>Fully scripted scalable interface systems.</p>
+<div class="system">
+<h3>Agent Abilities</h3>
+<p>Unique gameplay powers and interactions.</p>
 </div>
 
-<div class="box">
-<h3>Game Architecture</h3>
-<p>Client-server networking and modular code.</p>
+<div class="system">
+<h3>UI Architecture</h3>
+<p>Fully scripted modular interface system.</p>
 </div>
 
-<div class="box">
-<h3>World Systems</h3>
-<p>Interactive environments and mission structures.</p>
+<div class="system">
+<h3>Game Networking</h3>
+<p>Client-server architecture and replication.</p>
 </div>
 
 </div>
 
 </section>
+
 
 
 <section id="media">
 
-<h2>Project Media</h2>
+<h2>Media</h2>
 
-<p>Add screenshots or gameplay footage here.</p>
+<div class="gallery">
+
+<img src="images/crossline1.png">
+<img src="images/crossline2.png">
+<img src="images/crossline3.png">
+
+</div>
 
 </section>
+
 
 
 <section id="contact">
@@ -100,6 +153,16 @@ team strategy, agents, and mission based gameplay.
 <p>Discord: (optional)</p>
 
 </section>
+
+
+
+<footer>
+
+<p>© Mike — Roblox Developer</p>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
