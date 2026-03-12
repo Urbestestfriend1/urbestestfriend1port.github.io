@@ -1,41 +1,141 @@
 body{
-background:#0e0e0e;
-color:white;
-font-family:Arial;
 margin:0;
+font-family:Arial;
+background:#0f0f0f;
+color:white;
+scroll-behavior:smooth;
 }
 
-header{
-text-align:center;
-padding:50px;
-background:#181818;
+nav{
+position:fixed;
+width:100%;
+background:#111;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+z-index:1000;
 }
 
-h1{
-font-size:42px;
+.logo{
+font-size:20px;
+font-weight:bold;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+.nav-links li{
+cursor:pointer;
+opacity:.8;
+transition:.3s;
+}
+
+.nav-links li:hover{
+opacity:1;
 }
 
 section{
-max-width:1000px;
+padding:120px 10%;
+max-width:1200px;
 margin:auto;
-padding:50px;
 }
 
-.card{
-background:#1a1a1a;
-padding:25px;
-border-radius:10px;
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero button{
 margin-top:20px;
+padding:12px 30px;
+background:#2a72ff;
+border:none;
+border-radius:6px;
+color:white;
+cursor:pointer;
+font-size:16px;
 }
 
-.box{
-background:#1a1a1a;
+.subtitle{
+opacity:.7;
+margin-bottom:40px;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.project-card{
+background:#181818;
+border-radius:10px;
+overflow:hidden;
+transition:.3s;
+}
+
+.project-card:hover{
+transform:translateY(-5px);
+}
+
+.project-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.project-card h3{
+padding:15px;
+}
+
+.project-card p{
+padding:0 15px 20px;
+opacity:.7;
+}
+
+.systems-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.system{
+background:#181818;
 padding:20px;
 border-radius:8px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:8px;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+footer{
+text-align:center;
+padding:40px;
+opacity:.5;
 }
